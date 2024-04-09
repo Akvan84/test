@@ -1,0 +1,141 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: whitesmoke;
+}
+
+div.header {
+  width: 100%;
+}
+div.header > nav {
+  width: 100%;
+  height: 40px;
+  background-color: #2b2b2b;
+}
+
+div.header > nav > ul {
+  list-style: none;
+  width: 80%;
+  height: inherit;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+div.header > nav > ul > li {
+  width: auto;
+  height: inherit;
+  position: relative;
+}
+
+div.header > nav > ul > li > a {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  width: auto;
+  height: inherit;
+  padding: 0 10px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 300ms;
+}
+
+div.header > nav > ul > li > a:hover {
+  background-color: darkred;
+}
+
+div.header > nav > ul > li > ul {
+  list-style: none;
+  width: 200px;
+  height: auto;
+  display: none;
+  flex-flow: column wrap;
+  justify-content: center;
+  gap: 2px;
+  background-color: #2b2b2b;
+  padding: 0 5px;
+  position: absolute;
+  z-index: 1;
+}
+
+div.header > nav > ul > li:hover > ul {
+  display: flex;
+}
+
+div.header > nav > ul > li > ul > li {
+  height: 40px;
+  line-height: 40px;
+}
+
+div.header > nav > ul > li > ul > li > a {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  width: auto;
+  height: inherit;
+  padding: 0 10px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 300ms;
+}
+
+div.header > nav > ul > li > ul > li > a:hover {
+  background-color: darkred;
+}
+
+div.main {
+  width: 100%;
+  background-color: #2b2b2b;
+}
+
+div.main > div.parallax > div.text {
+  width: 50%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.829);
+  position: absolute;
+  top: 200px;
+  left: calc(50% / 2);
+  padding: 20px;
+}
+
+div.main > div.products {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 10px;
+}
+
+div.main > div.products > div.product {
+  flex-basis: 250px;
+  background-color: darkred;
+  padding: 10px;
+  display: flex;
+  flex-flow: column wrap ;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+div.main > div.products > div.product >img{
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+div.main > div.products > div.product > h2 {
+  font-size: 20px;
+}
+div.main > div.products > div.product > p {
+  text-align: justify;
+}
+
